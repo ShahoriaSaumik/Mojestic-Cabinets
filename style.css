@@ -1,0 +1,408 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*.raleway-<uniquifier> {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+  
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1 h2 h3 h4{
+    font-family: "Oswald", sans-serif;
+}
+p{
+    font-family:"Roboto", sans-serif;
+}
+.container{
+    max-width:1140px;
+    padding-left:30px;
+    padding-right:30px;
+    margin:0 auto;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+.header-section{
+    padding:10px 0;
+    position: absolute;
+    left:1%;
+    z-index:1;
+    
+}
+.logo{
+    color: aliceblue;
+}
+.header-section a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.header-section i{
+    padding-right:10px;
+}
+.header-section i{
+    color: aliceblue;
+}
+
+.header-section .row{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+   
+}
+.header-section .contact-column{
+    text-align: right;
+}
+.header-section .menu{
+    text-align: right;
+   
+}
+.header-section .logo{
+    text-align: left;
+}
+.contact-column a{
+    padding-right:25px;
+    font-family:"Open Sans", sans-serif;
+    font-size: 13px;
+}
+.banner img{
+    background-size:cover;
+    width:100%;
+}
+.banner{
+    position: relative;
+}
+.banner-container{
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform:translate(-50%);
+    margin-top: 106px;
+}
+.banner-text{
+    background-color: rgba(39, 39, 39, 0.637);
+
+}
+.banner-container h1{
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight:400;
+    color: aliceblue;
+    font-size:65px;
+    text-align: center;
+   
+}
+.banner-container p{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+.btn{
+    position: absolute;
+    top:70%;
+    left:45%;
+    z-index:1;
+}
+.btn a{
+    padding:5px 5px;
+    text-decoration: none;
+    background-color: brown;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    border-radius:4%;
+}
+.about-container{
+    display: flex;
+    padding-top:89px;
+    padding-bottom: 86px;
+}
+.about-text h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    margin-bottom:25px;
+
+}
+.about-text p{
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    font-size:14px;
+    color:silver;
+    margin-top:20px;
+    margin-bottom:28px;
+    line-height:20px;
+
+}
+.about-text h3{
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    margin-bottom:50px;
+
+}
+.about-text a {
+    display: inline-block;
+    padding:10px;
+    text-decoration:none;
+    background-color: brown;
+    color: aliceblue;
+    font-family:"Roboto", sans-serif;
+    font-weight: 700;
+}
+.card-section{
+    background-image: url(image/Untitled-3.jpg);
+    width:100%;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card1{
+    margin-top:83px;
+    width:350px;
+    background-color: aliceblue;
+    padding:10px;
+    margin-bottom:80px;
+    
+}
+.card1 img{
+    border:2px solid brown;
+    padding:20px;
+    border-radius:50%;
+    margin-left:35%;
+    margin-top:25px;
+}
+.card1 h2{
+    text-align: center;
+    margin:25px 0;
+    color: brown;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size:20px;
+}
+.card1 p{
+    text-align: center;
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    font-size:13px;
+    line-height:20px;
+
+}
+.card1 span{
+    color: brown;
+}
+.portfolio h2{
+    text-align: center;
+    margin-top:95px;
+    font-family: "Oswald", sans-serif;
+    font-size:27px;
+}
+.portfolio .logo{
+   margin-left:43%;
+   margin-top:20px;
+   margin-bottom:45px;
+}
+.portfolio-container{
+    justify-content:space-between;
+    padding-bottom:100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+   
+}
+.portfolio-container img{
+    width:100%;
+}
+.faq-section{
+    background-image: url('image/Untitled-12.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+    padding-top:100px;
+    
+}
+.faq-heading{
+    color: aliceblue;
+    text-align: center;
+}
+.faq-img{
+    margin-left:43%;
+    padding-bottom:50px;
+    padding-top:20px;
+}
+    
+.accordion-item{
+    margin-bottom:20px;
+    margin-left:80px;
+    margin-right:80px;
+}
+.blog-container{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-section{
+    margin-top: 90px;
+}
+.headline{
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    
+    margin-bottom:32px;
+}
+.logo{
+    margin-bottom:29px;
+    margin-left:42%;
+}
+.blog1{
+    width:348px;
+}
+.blog1 .date{
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;  
+    font-size:12px;
+    color:silver;
+    padding-top:17px;
+}
+.blog1 .date span{
+    color: red;
+}
+.blog1 h2{
+  font-family: "Raleway", sans-serif;
+    font-weight:700;
+    padding-top:169x;
+ 
+}
+.blog1 p{
+    font-family:"Roboto", sans-serif;
+    font-size:14px;
+    padding-top:16px;
+}
+.blog1 a{
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight:600;
+    color:red;
+    font: size 14px;;
+
+}
+.form-section{
+    background-color:black;
+    padding-top:62px;
+    padding-bottom:52px;
+    margin-top:50px;
+}
+.form-container label{
+    color: aliceblue;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    padding-left:56px;
+
+}
+.form-container input{
+    margin: 0 19px;
+    padding:5px ;
+    padding-left:3px;
+    padding-right:80px;
+}
+.form-container button{
+    background-color:brown;
+    color: aliceblue;
+    border: 0px;
+    padding:7px 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight:500;
+
+}
+.logo-icon{
+    margin:0 auto;
+    width: 300px;
+    margin-top:70px;
+}
+.logo-icon img{
+    margin-left: 30px;
+}
+.logo-icon p{
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    color: silver;
+    font-size:14px;
+    text-align: center;
+    margin-bottom:30px;
+    position: relative;
+    margin-top: 63px;
+
+}
+.logo-icon p::before{
+    content:'';
+    position: absolute;
+    bottom:20%;
+   
+   
+    
+}
+.icon{
+    margin-left:55px;
+    
+}
+.icon a{
+    padding:10px;
+    border:2px solid silver;
+    border-radius:50%;
+    color: silver;
+    margin-right:27px;
+    
+}
+.icon a:first-child{
+    padding:10px 15px;
+}
+.icon a:nth-child(2){
+    padding:10px 14px;
+}
+.paragraph{
+    font-family: "Open Sans", sans-serif;
+    font-size:14px;
+    color: silver;
+}
+.communication p{
+    font-family: "Oswald", sans-serif;
+    font-weight:400;
+    color:silver;
+    font-size:14px;
+}
+.communication span{
+    font-weight: 700;
+    color: black;
+}
+.list1 ul{
+    list-style-type:square;
+}
+.list1 ul li{
+    font-family: "Oswald", sans-serif;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom:80px;
+}
+.socket{
+    color:aliceblue;
+    padding:30px 0;
+    background-color: red;
+}
+.socket p{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size:16px;
+}
